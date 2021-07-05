@@ -70,8 +70,9 @@ void app_main(void)
     esp_efuse_mac_get_default(efuse_mac);
     printf("epic phrase\n");
     for (int i = 0; i < 6; ++i) {
-        printf("%c\n",efuse_mac[i]);
+        printf("%0x",efuse_mac[i]);
     }
+    printf("\n");
     /*const uint8_t *mac = "999999";
     esp_base_mac_addr_set(mac);*/
     //printf("%d\n",esp_read_mac());
