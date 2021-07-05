@@ -64,7 +64,7 @@ void app_main(void)
         touch_pad_config(button[i]);
     }
 
-    esp_netif_set_mac("");
+    //esp_netif_set_mac("");
 
     unsigned char efuse_mac[6];
     esp_efuse_mac_get_default(efuse_mac);
